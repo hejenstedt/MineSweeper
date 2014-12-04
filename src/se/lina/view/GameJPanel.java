@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.event.MouseInputListener;
 
 import se.lina.controller.MineSweeperController;
-import se.lina.model.Tile;
+import se.lina.model.MineSweeperTile;
 
 public class GameJPanel extends JPanel implements MouseInputListener {
 
@@ -45,7 +45,7 @@ public class GameJPanel extends JPanel implements MouseInputListener {
 		}
 	}
 
-	void updateValuesOnBoard(Tile[][] grid) {
+	void updateValuesOnBoard(MineSweeperTile[][] grid) {
 
 		for (int i = 0; i < grid.length; i++) {
 			for (int j = 0; j < grid[0].length; j++) {

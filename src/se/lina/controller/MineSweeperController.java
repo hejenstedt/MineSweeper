@@ -1,18 +1,18 @@
 package se.lina.controller;
 
-import se.lina.model.Grid;
+import se.lina.model.MineSweeperModel;
 import se.lina.model.TimeAdministrator;
 
 public class MineSweeperController {
 
-	private Grid grid;
+	private MineSweeperModel grid;
 	private int noOfClicks;
 //	private long start;
 //	private long stop;
 	private long time;
 	private TimeAdministrator timeAdministrator;
 
-	public MineSweeperController(Grid grid, TimeAdministrator timeAdministrator) {
+	public MineSweeperController(MineSweeperModel grid, TimeAdministrator timeAdministrator) {
 		this.grid = grid;
 		this.timeAdministrator= timeAdministrator;
 		noOfClicks = 0;

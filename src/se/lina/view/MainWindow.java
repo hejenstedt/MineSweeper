@@ -8,7 +8,7 @@ import javax.swing.WindowConstants;
 
 import se.lina.controller.MineSweeperController;
 import se.lina.model.GameObserver;
-import se.lina.model.Tile;
+import se.lina.model.MineSweeperTile;
 import se.lina.model.TimeObserver;
 
 public class MainWindow implements GameObserver, TimeObserver {
@@ -41,19 +41,19 @@ public class MainWindow implements GameObserver, TimeObserver {
 	}
 
 	@Override
-	public void updateBoard(Tile[][] grid) {
+	public void updateBoard(MineSweeperTile[][] grid) {
 		gamePanel.updateValuesOnBoard(grid);
 	}
 
 	@Override
-	public void gameOver(Tile[][] grid, boolean youDied) {
+	public void gameOver(MineSweeperTile[][] grid, boolean youDied) {
 		gamePanel.updateValuesOnBoard(grid);
 		controller.gameOver(youDied);
 		// TODO: do something
 	}
 
 	@Override
-	public void newBoardSize(Tile[][] grid) {
+	public void newBoardSize(MineSweeperTile[][] grid) {
 		this.rows = grid.length;
 		this.columns= grid[0].length;
 //		buttonSize = windowHeight/noOfRows;

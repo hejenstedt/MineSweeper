@@ -1,7 +1,6 @@
 package se.lina.view;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,6 +11,7 @@ import se.lina.controller.MineSweeperController;
 
 public class ButtonJPanel extends JPanel {
 
+	private static final long serialVersionUID = 1L;
 	private MineSweeperController controller;
 
 	public ButtonJPanel(MineSweeperController controller) {

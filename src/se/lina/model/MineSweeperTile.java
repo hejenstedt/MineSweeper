@@ -1,13 +1,13 @@
 package se.lina.model;
 
-public class Tile {
+public class MineSweeperTile {
 
 	private boolean hasBomb;
 	private int noOfBombsAround;
 	private boolean markedAsBomb;
 	private boolean hasBeenClicked;
 
-	public Tile() {
+	public MineSweeperTile() {
 		this.hasBomb = false;
 		this.noOfBombsAround = 0;
 		markedAsBomb = false;

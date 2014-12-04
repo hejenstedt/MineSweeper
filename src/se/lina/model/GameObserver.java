@@ -2,9 +2,9 @@ package se.lina.model;
 
 public interface GameObserver {
 
-	void updateBoard(Tile[][] grid);
+	void updateBoard(MineSweeperTile[][] grid);
 
-	void gameOver(Tile[][] grid, boolean youDied);
+	void gameOver(MineSweeperTile[][] grid, boolean youDied);
 
-	void newBoardSize(Tile[][] grid);
+	void newBoardSize(MineSweeperTile[][] grid);
 }
